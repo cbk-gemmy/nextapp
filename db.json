@@ -1,0 +1,6 @@
+{
+  "topics": [
+    { "id": 1, "title": "html", "body": "html is ..." },
+    { "id": 2, "title": "html", "body": "css is ..." }
+  ]
+}
