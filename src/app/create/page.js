@@ -24,6 +24,7 @@ export default function Create() {
             console.log(result);
             const lastid = result.id;
             router.push(`/read/${lastid}`);
+            router.refresh();
           });
       }}
     >
