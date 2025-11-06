@@ -5,7 +5,7 @@ export default async function Read({ params }) {
 
   // 해당 id를 이용해 로컬 서버에서 topic 데이터를 요청합니다.
   // cache: "no-store" → 매번 서버에서 새 데이터를 가져오도록 지정 (SSR 시 최신 데이터 유지)
-  const resp = await fetch(`http://localhost:9999/topics/${id}`, {
+  const resp = await fetch(process.env.NEXT_PUBLIC_API_URL + `topics/${id}`, {
     cache: "no-store",
   });
 
