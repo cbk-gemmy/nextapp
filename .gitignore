@@ -31,7 +31,8 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-.env*
+#.env* 기본값 env.* 모든것을 제외
+.env.local
 
 # vercel
 .vercel
